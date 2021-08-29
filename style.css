@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+thead {
+  background-color: #61acb3;
+}
+input.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+input.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+[type="text"].form-control:focus,
+[type="password"].form-control:focus,
+[contenteditable].form-control:focus {
+  border: none;
+  box-shadow: inset 0 -1px 0 #ddd;
+}
+.forpass {
+  cursor: pointer;
+  padding: 10px;
+  color: #61acb3;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #61acb3 !important;
+  border: none !important;
+  border-radius: 2rem !important;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  div.form-content {
+    align-items: start !important;
+  }
+  div.form-contain {
+    width: 100% !important;
+    height: 90% !important;
+  }
+  div.checkbox-container {
+    flex-direction: column;
+  }
+div.checkbox-container input{
+  margin-right: 7rem;
+}
+}
